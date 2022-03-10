@@ -170,6 +170,14 @@ fv300 ALL=(ALL) NOPASSWD: ALL
 ```
 sudo apt install can-utils
 ```
+## CAN Systec
+Si se usa SystecCAN, se deben instalar los drivers
+```
+cd ~
+wget https://www2.systec-electronic.com/fileadmin/Redakteur/Unternehmen/Support/Downloadbereich/Treiber/systec_can-V1.0.3.tar.bz2
+tar -xf systec_can-V1.0.3.tar.bz2
+rm systec_can-V1.0.3.tar.bz2
+```
 
 ## ExifTools
 
@@ -207,14 +215,18 @@ En la primera linea reemplazar lo que tenga con
 ```
 
 ## Configuración de servicios
-Copiar archivos de configuración de servicios  `hbMonitor.service` y `obc.service`
+Copiar archivos de configuración de servicios  `hbMonitor.service` y `obc.service` y configurar systemd.
 ```
 sudo cp obc.service /etc/systemd/system/
 sudo cp hbMonitor.service /etc/systemd/system/
+sudo systemctl enable obc.service
+sudo systemctl enable hbMonitor.service
 ```
 
 Copiar  `launcher.sh` e `install.sh`
 ```
+chmod +x launcher.sh
+chmod +x install.sh
 cp launcher.sh /home/fv300/fix-fbuild/trunk/install/bin/launcher.sh
-cp install.sh /home/fv300/Documentos/systec_can-master/
+cp install.sh /home/fv300/systec_can-master/
 ```

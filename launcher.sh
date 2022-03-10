@@ -9,7 +9,7 @@ xrandr --output DP-1 --mode 1920x1080 --rate 60
 xrandr --output HDMI-1 --mode 1920x1080 --rate 30
 
 ## Configura el driver de systec CAN
-cd /home/fv300/Documentos/systec_can-master/
+cd /home/fv300/systec_can-master/
 ./install.sh
 
 ## Aplicación princiapl
