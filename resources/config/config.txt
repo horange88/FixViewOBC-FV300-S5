@@ -1,0 +1,9 @@
+<OSD>
+
+	<LIST>
+		<DESC> TEST STRING
+		<STR1>  
+		<STR2>  
+	</LIST>
+
+</OSD>

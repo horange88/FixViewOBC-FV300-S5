@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+#if [ $1 == '-f' ]
+#then
+	#sudo env  GENICAM_ROOT_V3_0="/opt/pleora/ebus_sdk/Ubuntu-x86_64/lib/genicam"  nice -n -20 ./fv300-s2 -f
+#else
+#	sudo env  GENICAM_ROOT_V3_0="/opt/pleora/ebus_sdk/Ubuntu-x86_64/lib/genicam"  nice -n -20 ./fv300-s2 
+#fi
+
+
+if [ $1 == '-f' ]
+then
+	sudo env  GENICAM_ROOT_V3_0="/opt/pleora/ebus_sdk/Ubuntu-x86_64/lib/genicam"  ./fv300-s2 -f
+else
+	sudo env  GENICAM_ROOT_V3_0="/opt/pleora/ebus_sdk/Ubuntu-x86_64/lib/genicam"  ./fv300-s2 
+fi
+

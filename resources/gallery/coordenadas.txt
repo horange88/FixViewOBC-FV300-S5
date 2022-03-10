@@ -1,0 +1,7 @@
+al_mem:		1549 1005
+al_pendrv:	1255 1005
+flecha_der:	1845  452
+flecha_izq:	  21  452
+fs_borrar:	1549 1005
+fs_share:	1255 1005
+volver:		 100 1005

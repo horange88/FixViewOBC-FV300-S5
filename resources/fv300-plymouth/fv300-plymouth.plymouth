@@ -1,0 +1,7 @@
+[Plymouth Theme]
+Name=FV300 002
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/002-catoni
+ScriptFile=/usr/share/plymouth/themes/002-catoni/002-catoni.script

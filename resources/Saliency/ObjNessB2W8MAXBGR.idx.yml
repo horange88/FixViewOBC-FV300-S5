@@ -1,0 +1,6 @@
+%YAML:1.0
+ObjNessB2W8MAXBGR: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: i
+   data: [ 10, 12]
