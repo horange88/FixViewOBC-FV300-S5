@@ -1,0 +1,23 @@
+
+[Unit]
+Description="HB Monitor FV300-S5"
+After=network.target
+Requires=syslog.socket
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/fv300/hbMonitor
+ExecStart=/home/fv300/hbMonitor/hbMonitor.py
+Restart=on-failure
+RestartSec=0
+
+## Define el usuario y grupo con el que se ejecutará el script
+
+User=root
+Group=root
+
+## Define variables de entorno necesarias para la ejecución de fv300-pli
+
+[Install]
+WantedBy=multi-user.target

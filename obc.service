@@ -1,0 +1,28 @@
+[Unit]
+Description="On Board Computer FV300-S5"
+After=network.target
+Requires=syslog.socket
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/fv300/fix-fbuild/trunk/install/bin/
+ExecStart=/home/fv300/fix-fbuild/trunk/install/bin/launcher.sh
+Restart=on-failure
+RestartSec=0
+
+## Define el usuario y grupo con el que se ejecutará el script
+
+User=fv300
+Group=fv300
+
+## Define variables de entorno necesarias para la ejecución de fv300-pli
+
+Environment="DISPLAY=:0"
+#Environment="XAUTHORITY=/home/fv300/.Xauthority"
+Environment=GENICAM_ROOT_V3_0="/opt/pleora/ebus_sdk/Ubuntu-x86_64/lib/genicam"
+#Environment=TERM="xterm-256color"
+
+
+[Install]
+WantedBy=multi-user.target
