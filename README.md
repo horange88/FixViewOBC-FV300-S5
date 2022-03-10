@@ -230,3 +230,6 @@ chmod +x install.sh
 cp launcher.sh /home/fv300/fix-fbuild/trunk/install/bin/launcher.sh
 cp install.sh /home/fv300/systec_can-master/
 ```
+
+## Ocultar mensajes de error en Ubuntu
+Editar el archivo `/etc/default/apport` y cambiar la linea `enabled=1` por `enabled=0`
