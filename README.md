@@ -49,10 +49,8 @@ Desactivar las animaciones al cargar escritorio
 gsettings set org.gnome.desktop.interface enable-animations false
 ```
 ## Instalar splash
-seguir instruscciones en
-```
-https://github.com/horange88/FixViewSplash.git
-```
+seguir instruscciones en https://github.com/horange88/FixViewSplash.git
+
 ## Instalar gestor de ventanas Openbox (NO NECESARIO EN UBUNTU)
 ```
 sudo apt-get install openbox obconf openbox-menu lxterminal chromium-browser xorg
